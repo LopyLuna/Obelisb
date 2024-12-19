@@ -1,0 +1,19 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "priority": 1500,
+  "package": "uwu.lopyluna.obelisk.mixins",
+  "compatibilityLevel": "JAVA_17",
+  "refmap": "excavein.refmap.json",
+  "mixins": [
+    "GameProfileMixin",
+    "LivingEntityAccessor",
+    "PlayerMixin",
+    "ServerPlayerMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  },
+  "client": [
+  ]
+}
