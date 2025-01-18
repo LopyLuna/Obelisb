@@ -140,7 +140,7 @@ public class PlayerCosmetics {
         event.getSkins().forEach(skin -> {
             LivingEntityRenderer<AbstractClientPlayer, PlayerModel<AbstractClientPlayer>> playerModel = event.getSkin(skin);
             if (playerModel != null) {
-                playerModel.addLayer(new DnDesireCosmeticLayer(playerModel, DnDesireCosmetic));
+                playerModel.addLayer(new DnDesireCosmeticLayer(playerModel, event.getEntityModels(), DnDesireCosmetic));
             }
         });
     }

@@ -12,6 +12,7 @@ import net.neoforged.neoforge.event.RegisterCommandsEvent;
 import net.neoforged.neoforge.event.server.ServerStartingEvent;
 import uwu.lopyluna.obelisk.helper.Registration;
 import uwu.lopyluna.obelisk.register.commands.ObeliskCommands;
+import uwu.lopyluna.obelisk.register.commands.ObeliskCosmeticCommand;
 
 @SuppressWarnings("unused")
 @Mod(Obelisk.MOD_ID)
@@ -35,6 +36,7 @@ public class Obelisk {
 
     @SubscribeEvent
     public void onCommandRegister(RegisterCommandsEvent event) {
+        ObeliskCosmeticCommand.register(event.getDispatcher());
         ObeliskCommands.register(event.getDispatcher(), event.getBuildContext());
     }
 
